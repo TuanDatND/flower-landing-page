@@ -35,13 +35,9 @@ export const StatsBar: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 lg:px-8">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
           {stats.map((item, idx) => (
-            <motion.div
+            <div
               key={idx}
-              initial={{ opacity: 0, y: 24 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: '-40px' }}
-              transition={{ duration: 0.5, delay: idx * 0.1, ease: 'easeOut' }}
-              className="bg-[#fcfcfc] border border-zinc-200 p-5 rounded-2xl shadow-sm flex flex-col justify-between hover:border-black transition-colors"
+              className="bg-[#fcfcfc] border border-zinc-200 p-5 rounded-2xl shadow-sm flex flex-col justify-between hover:border-black transition-colors [transform:translateZ(0)]"
             >
               <div className="flex items-center justify-between text-zinc-600 mb-2">
                 <span className="text-[13px] font-semibold text-zinc-700">{item.title}</span>
@@ -49,7 +45,7 @@ export const StatsBar: React.FC = () => {
               </div>
               <div className="text-3xl font-bold text-black tracking-tight">{item.value}</div>
               <p className="text-[12px] text-zinc-500 mt-1">{item.desc}</p>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

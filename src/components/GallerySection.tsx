@@ -11,13 +11,7 @@ export const GallerySection: React.FC = () => {
     <section className="bg-white border-y border-zinc-200 py-16 lg:py-24 relative overflow-hidden" id="hinh-anh">
       <div className="max-w-7xl mx-auto px-4 lg:px-8">
         {/* Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 24 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: '-50px' }}
-          transition={{ duration: 0.5, ease: 'easeOut' }}
-          className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4"
-        >
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
           <div>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-black text-white text-[11px] font-semibold tracking-wider uppercase mb-2">
               <Camera className="w-3.5 h-3.5" />
@@ -35,25 +29,20 @@ export const GallerySection: React.FC = () => {
             <ImageIcon className="w-4 h-4 text-black" />
             <span>Hình ảnh thực tế chụp tại vườn ươm</span>
           </div>
-        </motion.div>
+        </div>
 
         {/* Bento Gallery Grid */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-4">
-          {GALLERY_ITEMS.map((item, idx) => (
-            <motion.div
+          {GALLERY_ITEMS.map((item) => (
+            <div
               key={item.id}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: '-40px' }}
-              transition={{ duration: 0.5, delay: idx * 0.1, ease: 'easeOut' }}
               onClick={() => setSelectedItem(item)}
-              className={`${item.colSpan} relative ${item.aspect} rounded-2xl overflow-hidden bg-zinc-100 border border-zinc-200 shadow-md group cursor-pointer`}
+              className={`${item.colSpan} relative ${item.aspect} rounded-2xl overflow-hidden bg-zinc-100 border border-zinc-200 shadow-md group cursor-pointer [transform:translateZ(0)]`}
             >
               <img
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 alt={item.alt}
                 src={item.imageUrl}
-                loading="lazy"
                 decoding="async"
                 width="600"
                 height="400"
@@ -78,7 +67,7 @@ export const GallerySection: React.FC = () => {
                   {item.subtitle}
                 </span>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

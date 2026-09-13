@@ -37,11 +37,11 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-[#fafafa] font-['Plus_Jakarta_Sans',sans-serif] text-zinc-800 antialiased selection:bg-black selection:text-white relative overflow-x-hidden">
-      {/* Subtle Background Glows strictly contained to prevent horizontal scrollbar */}
-      <div className="fixed inset-0 overflow-hidden pointer-events-none -z-10">
-        <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-[900px] h-[500px] bg-zinc-200/40 blur-[140px] rounded-full"></div>
-        <div className="absolute top-1/3 -left-40 w-[600px] h-[600px] bg-zinc-300/30 blur-[160px] rounded-full"></div>
-        <div className="absolute top-2/3 -right-40 w-[600px] h-[600px] bg-zinc-200/30 blur-[160px] rounded-full"></div>
+      {/* Subtle Background Glows using hardware-accelerated radial gradients (zero jank/stutter) */}
+      <div className="fixed inset-0 overflow-hidden pointer-events-none -z-10 [transform:translateZ(0)]">
+        <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-[900px] h-[500px] rounded-full opacity-60 [background:radial-gradient(ellipse_at_center,_rgba(228,228,231,0.6)_0%,_transparent_70%)]"></div>
+        <div className="absolute top-1/3 -left-40 w-[600px] h-[600px] rounded-full opacity-40 [background:radial-gradient(circle_at_center,_rgba(212,212,216,0.5)_0%,_transparent_70%)]"></div>
+        <div className="absolute top-2/3 -right-40 w-[600px] h-[600px] rounded-full opacity-40 [background:radial-gradient(circle_at_center,_rgba(228,228,231,0.5)_0%,_transparent_70%)]"></div>
       </div>
 
       {/* Top Header */}

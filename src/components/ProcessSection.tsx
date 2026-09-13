@@ -32,13 +32,7 @@ export const ProcessSection: React.FC = () => {
 
   return (
     <section className="max-w-7xl mx-auto px-4 lg:px-8 py-16 lg:py-24 bg-[#fafafa] overflow-hidden" id="quy-trinh">
-      <motion.div
-        initial={{ opacity: 0, y: 24 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: '-50px' }}
-        transition={{ duration: 0.5, ease: 'easeOut' }}
-        className="max-w-2xl mx-auto text-center mb-12"
-      >
+      <div className="max-w-2xl mx-auto text-center mb-12">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-black text-white text-[11px] font-semibold tracking-wider uppercase mb-2">
           <ListOrdered className="w-3.5 h-3.5" />
           <span>QUY TRÌNH ĐƠN GIẢN &amp; MINH BẠCH</span>
@@ -49,17 +43,13 @@ export const ProcessSection: React.FC = () => {
         <p className="text-[14px] text-zinc-600 mt-2 font-normal">
           Quy trình phục vụ nhanh gọn giúp khách hàng kiểm tra cây thực tế tại vườn trước khi quyết định nhận hàng.
         </p>
-      </motion.div>
+      </div>
 
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4 relative">
         {steps.map((item, idx) => (
-          <motion.div
+          <div
             key={idx}
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: '-40px' }}
-            transition={{ duration: 0.45, delay: idx * 0.1, ease: 'easeOut' }}
-            className="bg-white border border-zinc-200 rounded-2xl p-6 shadow-sm flex flex-col relative group hover:border-black transition-all"
+            className="bg-white border border-zinc-200 rounded-2xl p-6 shadow-sm flex flex-col relative group hover:border-black transition-all [transform:translateZ(0)]"
           >
             <div className="flex items-center justify-between mb-4">
               <span className="font-mono text-[11px] font-bold text-white bg-black px-2.5 py-1 rounded-full">
@@ -69,7 +59,7 @@ export const ProcessSection: React.FC = () => {
             </div>
             <h3 className="text-[16px] font-bold text-black mb-2">{item.title}</h3>
             <p className="text-[13px] text-zinc-600 leading-relaxed font-normal">{item.desc}</p>
-          </motion.div>
+          </div>
         ))}
       </div>
     </section>

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Sprout, Send, MessageSquare, Info } from 'lucide-react';
-import { motion, AnimatePresence } from 'motion/react';
 import { FLOWER_DATA } from '../data/flowers';
 import { FlowerCategory, FlowerItem } from '../types';
 
@@ -38,13 +37,7 @@ export const CatalogueSection: React.FC<CatalogueSectionProps> = ({
   return (
     <section className="max-w-7xl mx-auto px-4 lg:px-8 py-16 lg:py-24 bg-[#fafafa]" id="danh-muc-hoa">
       {/* Section Header */}
-      <motion.div
-        initial={{ opacity: 0, y: 24 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: '-50px' }}
-        transition={{ duration: 0.5, ease: 'easeOut' }}
-        className="mb-8"
-      >
+      <div className="mb-8">
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-4 mb-5">
           <div>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-black text-white text-[11px] font-semibold tracking-wider uppercase mb-2">
@@ -80,22 +73,16 @@ export const CatalogueSection: React.FC<CatalogueSectionProps> = ({
             );
           })}
         </div>
-      </motion.div>
+      </div>
 
-      {/* Grid of Flowers with Scroll Animation */}
-      <motion.div layout className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5" id="flowerGrid">
-        <AnimatePresence>
-          {filteredFlowers.map((flower, idx) => (
-            <motion.div
-              layout
-              key={flower.id}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: '-40px' }}
-              transition={{ duration: 0.45, delay: (idx % 4) * 0.08, ease: 'easeOut' }}
-              className="flower-card group bg-white border border-zinc-200/90 rounded-2xl p-3.5 shadow-sm hover:border-black hover:shadow-md transition-all flex flex-col"
-              data-category={flower.category}
-            >
+      {/* Grid of Flowers */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5" id="flowerGrid">
+        {filteredFlowers.map((flower) => (
+          <div
+            key={flower.id}
+            className="flower-card group bg-white border border-zinc-200/90 rounded-2xl p-3.5 shadow-sm hover:border-black hover:shadow-md transition-all flex flex-col"
+            data-category={flower.category}
+          >
               {/* Image Box */}
               <div
                 className="relative aspect-[4/3] rounded-xl overflow-hidden bg-zinc-100 mb-3 cursor-pointer"
@@ -105,7 +92,6 @@ export const CatalogueSection: React.FC<CatalogueSectionProps> = ({
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   alt={flower.alt}
                   src={flower.imageUrl}
-                  loading="lazy"
                   decoding="async"
                   width="400"
                   height="300"
@@ -182,19 +168,12 @@ export const CatalogueSection: React.FC<CatalogueSectionProps> = ({
                   </div>
                 </div>
               </div>
-            </motion.div>
+            </div>
           ))}
-        </AnimatePresence>
-      </motion.div>
+      </div>
 
       {/* Bottom Wholesale Custom Order Banner */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: '-30px' }}
-        transition={{ duration: 0.5, ease: 'easeOut' }}
-        className="mt-10 p-5 bg-white border border-zinc-200 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-4 shadow-sm"
-      >
+      <div className="mt-10 p-5 bg-white border border-zinc-200 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-4 shadow-sm">
         <div className="flex items-center gap-3">
           <div className="w-8 h-8 rounded-full bg-zinc-100 flex items-center justify-center text-black flex-shrink-0">
             <Info className="w-5 h-5 text-black" />
@@ -212,7 +191,7 @@ export const CatalogueSection: React.FC<CatalogueSectionProps> = ({
           <MessageSquare className="w-4 h-4" />
           <span>Nhắn Zalo Nhận Bảng Giá Sỉ Tận Vườn</span>
         </a>
-      </motion.div>
+      </div>
     </section>
   );
 };

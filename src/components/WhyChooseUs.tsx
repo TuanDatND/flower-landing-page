@@ -7,13 +7,7 @@ export const WhyChooseUs: React.FC = () => {
     <section className="bg-white border-y border-zinc-200 py-16 lg:py-24 relative overflow-hidden" id="uu-diem">
       <div className="max-w-7xl mx-auto px-4 lg:px-8">
         {/* Section Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 24 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: '-50px' }}
-          transition={{ duration: 0.5, ease: 'easeOut' }}
-          className="max-w-2xl mx-auto text-center mb-12"
-        >
+        <div className="max-w-2xl mx-auto text-center mb-12">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-black text-white text-[11px] font-semibold tracking-wider uppercase mb-2">
             <Star className="w-3.5 h-3.5" />
             <span>CHẤT LƯỢNG LÀM NÊN THƯƠNG HIỆU</span>
@@ -24,17 +18,13 @@ export const WhyChooseUs: React.FC = () => {
           <p className="text-[14px] text-zinc-600 mt-2 font-normal">
             Không chỉ bán giống, chúng tôi trao gửi sự an tâm và đồng hành trong từng khâu kỹ thuật chăm sóc cây.
           </p>
-        </motion.div>
+        </div>
 
         {/* Bento Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           {/* Card 1: F1 Standard & Tissue Culture (Col Span 2) */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: '-40px' }}
-            transition={{ duration: 0.5, delay: 0.05, ease: 'easeOut' }}
-            className="md:col-span-2 bg-[#fcfcfc] border border-zinc-200 rounded-2xl p-6 lg:p-8 shadow-sm flex flex-col justify-between group hover:border-black transition-all"
+          <div
+            className="md:col-span-2 bg-[#fcfcfc] border border-zinc-200 rounded-2xl p-6 lg:p-8 shadow-sm flex flex-col justify-between group hover:border-black transition-all [transform:translateZ(0)]"
           >
             <div className="flex items-start justify-between gap-4 mb-6">
               <div className="w-12 h-12 rounded-xl bg-black text-white flex items-center justify-center flex-shrink-0">
@@ -58,26 +48,22 @@ export const WhyChooseUs: React.FC = () => {
             <div className="mt-6 pt-6 grid grid-cols-3 gap-2 bg-white border border-zinc-200 rounded-xl p-3.5">
               <div>
                 <span className="text-xl font-bold text-black tracking-tight">98%+</span>
-                <span className="text-[12px] text-zinc-500 block">Tỉ lệ cây sống</span>
+                <span className="text-[11px] text-zinc-500 block">Tỉ lệ bén rễ</span>
               </div>
               <div>
-                <span className="text-xl font-bold text-zinc-700 tracking-tight">0%</span>
-                <span className="text-[12px] text-zinc-500 block">Mầm bệnh rễ</span>
+                <span className="text-xl font-bold text-black tracking-tight">F1</span>
+                <span className="text-[11px] text-zinc-500 block">Chuẩn phôi cấy mô</span>
               </div>
               <div>
-                <span className="text-xl font-bold text-black tracking-tight">100%</span>
-                <span className="text-[12px] text-zinc-500 block">Chuẩn sắc hoa</span>
+                <span className="text-xl font-bold text-black tracking-tight">0%</span>
+                <span className="text-[11px] text-zinc-500 block">Sốc nhiệt khi trồng</span>
               </div>
             </div>
-          </motion.div>
+          </div>
 
           {/* Card 2: Direct Owner Consultation */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: '-40px' }}
-            transition={{ duration: 0.5, delay: 0.15, ease: 'easeOut' }}
-            className="bg-[#fcfcfc] border border-zinc-200 rounded-2xl p-6 lg:p-8 shadow-sm flex flex-col justify-between group hover:border-black transition-all"
+          <div
+            className="bg-[#fcfcfc] border border-zinc-200 rounded-2xl p-6 lg:p-8 shadow-sm flex flex-col justify-between group hover:border-black transition-all [transform:translateZ(0)]"
           >
             <div className="w-12 h-12 rounded-xl bg-black text-white flex items-center justify-center mb-6 flex-shrink-0">
               <Handshake className="w-6 h-6" />
@@ -96,15 +82,11 @@ export const WhyChooseUs: React.FC = () => {
               <PhoneCall className="w-4 h-4 text-black" />
               <span>Hotline kỹ thuật luôn sẵn sàng</span>
             </div>
-          </motion.div>
+          </div>
 
           {/* Card 3: Direct Nursery Wholesale Price */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: '-40px' }}
-            transition={{ duration: 0.5, delay: 0.2, ease: 'easeOut' }}
-            className="bg-[#fcfcfc] border border-zinc-200 rounded-2xl p-6 lg:p-8 shadow-sm flex flex-col justify-between group hover:border-black transition-all"
+          <div
+            className="bg-[#fcfcfc] border border-zinc-200 rounded-2xl p-6 lg:p-8 shadow-sm flex flex-col justify-between group hover:border-black transition-all [transform:translateZ(0)]"
           >
             <div className="w-12 h-12 rounded-xl bg-black text-white flex items-center justify-center mb-6 flex-shrink-0">
               <BadgePercent className="w-6 h-6" />
@@ -124,15 +106,11 @@ export const WhyChooseUs: React.FC = () => {
                 Tiết kiệm 20% - 30% chi phí giống
               </span>
             </div>
-          </motion.div>
+          </div>
 
           {/* Card 4: Professional Packaging & Safe Shipping (Col Span 2) */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: '-40px' }}
-            transition={{ duration: 0.5, delay: 0.25, ease: 'easeOut' }}
-            className="md:col-span-2 bg-[#fcfcfc] border border-zinc-200 rounded-2xl p-6 lg:p-8 shadow-sm flex flex-col justify-between group hover:border-black transition-all"
+          <div
+            className="md:col-span-2 bg-[#fcfcfc] border border-zinc-200 rounded-2xl p-6 lg:p-8 shadow-sm flex flex-col justify-between group hover:border-black transition-all [transform:translateZ(0)]"
           >
             <div className="flex items-start justify-between gap-4 mb-6">
               <div className="w-12 h-12 rounded-xl bg-black text-white flex items-center justify-center flex-shrink-0">
@@ -166,7 +144,7 @@ export const WhyChooseUs: React.FC = () => {
                 Chành xe quen các tỉnh
               </span>
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>

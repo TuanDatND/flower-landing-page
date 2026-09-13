@@ -92,13 +92,7 @@ ${data.quantity.trim() ? `• Số lượng dự kiến: ${data.quantity.trim()}
       <div className="bg-white border border-zinc-200 rounded-3xl p-6 sm:p-10 lg:p-12 shadow-[0_25px_60px_rgba(0,0,0,0.06)]">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14">
           {/* Left Column: Direct Info */}
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, margin: '-50px' }}
-            transition={{ duration: 0.6, ease: 'easeOut' }}
-            className="lg:col-span-5 flex flex-col gap-6"
-          >
+          <div className="lg:col-span-5 flex flex-col gap-6">
             <div>
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-black text-white text-[11px] font-semibold tracking-wider uppercase mb-3">
                 <PhoneCall className="w-3.5 h-3.5" />
@@ -194,16 +188,10 @@ ${data.quantity.trim() ? `• Số lượng dự kiến: ${data.quantity.trim()}
                 </div>
               </div>
             </div>
-          </motion.div>
+          </div>
 
           {/* Right Column: Quote Form */}
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, margin: '-50px' }}
-            transition={{ duration: 0.6, ease: 'easeOut' }}
-            className="lg:col-span-7 bg-zinc-50/80 border border-zinc-200 rounded-2xl p-6 sm:p-8 flex flex-col"
-          >
+          <div className="lg:col-span-7 bg-zinc-50/80 border border-zinc-200 rounded-2xl p-6 sm:p-8 flex flex-col">
             <div>
               <h3 className="text-lg font-bold text-black mb-1">
                 Gửi Yêu Cầu Báo Giá &amp; Đặt Giống
@@ -429,17 +417,11 @@ ${data.quantity.trim() ? `• Số lượng dự kiến: ${data.quantity.trim()}
                 <span>Phản hồi &lt; 15 phút</span>
               </span>
             </div>
-          </motion.div>
+          </div>
         </div>
 
         {/* Full-width Map Card below */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: '-50px' }}
-          transition={{ duration: 0.6, ease: 'easeOut' }}
-          className="mt-10 pt-8 border-t border-zinc-200"
-        >
+        <div className="mt-10 pt-8 border-t border-zinc-200">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4">
             <div className="flex items-center gap-2.5">
               <div className="w-9 h-9 rounded-xl bg-black text-white flex items-center justify-center flex-shrink-0 shadow-sm">
@@ -484,7 +466,7 @@ ${data.quantity.trim() ? `• Số lượng dự kiến: ${data.quantity.trim()}
               className="w-full h-full"
             />
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

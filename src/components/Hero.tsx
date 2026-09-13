@@ -94,10 +94,10 @@ export const Hero: React.FC<HeroProps> = ({ onExploreClick, onCallClick, onSelec
 
       {/* Greenhouse Showcase Display */}
       <motion.div
-        initial={{ opacity: 0, y: 30, scale: 0.98 }}
-        animate={{ opacity: 1, y: 0, scale: 1 }}
-        transition={{ duration: 0.7, delay: 0.25, ease: 'easeOut' }}
-        className="relative max-w-5xl mx-auto bg-white border border-zinc-200 rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.06)] p-2.5 sm:p-4 overflow-hidden"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, ease: 'easeOut' }}
+        className="relative max-w-5xl mx-auto bg-white border border-zinc-200 rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.06)] p-2.5 sm:p-4 overflow-hidden [transform:translateZ(0)]"
       >
         {/* Window Bar */}
         <div className="flex items-center justify-between pb-2.5 sm:pb-3 px-1 sm:px-2 border-b border-zinc-100 mb-3 gap-2">
@@ -178,7 +178,6 @@ export const Hero: React.FC<HeroProps> = ({ onExploreClick, onCallClick, onSelec
                 className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 alt="Bộ rễ trắng mập ngọn cúc giống Dũng Tâm"
                 src="/flowers/giong-re-khoe.jpg"
-                loading="lazy"
                 decoding="async"
                 width="400"
                 height="300"
@@ -209,7 +208,6 @@ export const Hero: React.FC<HeroProps> = ({ onExploreClick, onCallClick, onSelec
                 className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 alt="Chủ vườn Giống Cúc Dũng Tâm"
                 src="/flowers/chu-vuon-dung-tam.jpg"
-                loading="lazy"
                 decoding="async"
                 width="400"
                 height="300"
@@ -252,12 +250,8 @@ export const Hero: React.FC<HeroProps> = ({ onExploreClick, onCallClick, onSelec
             desc: 'Nhà giống Dũng Tâm hỗ trợ',
           },
         ].map((badge, idx) => (
-          <motion.div
+          <div
             key={idx}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: '-20px' }}
-            transition={{ duration: 0.4, delay: idx * 0.08, ease: 'easeOut' }}
             className="flex items-center gap-3 p-3.5 bg-white rounded-2xl border border-zinc-200 shadow-sm hover:border-black transition-all"
           >
             <div className="w-10 h-10 rounded-xl bg-black flex items-center justify-center text-white flex-shrink-0">
@@ -267,7 +261,7 @@ export const Hero: React.FC<HeroProps> = ({ onExploreClick, onCallClick, onSelec
               <span className="text-[13px] font-bold text-black block">{badge.title}</span>
               <span className="text-[12px] text-zinc-500">{badge.desc}</span>
             </div>
-          </motion.div>
+          </div>
         ))}
       </div>
     </section>
