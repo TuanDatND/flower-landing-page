@@ -37,6 +37,10 @@ export const FlowerModal: React.FC<FlowerModalProps> = ({
               src={flower.imageUrl}
               alt={flower.alt}
               className="w-full h-full object-cover"
+              loading="lazy"
+              decoding="async"
+              width="800"
+              height="450"
             />
             <div className="absolute top-3 left-3 flex gap-2">
               <span className="px-3 py-1 rounded-full bg-black text-white text-[12px] font-bold shadow-md">

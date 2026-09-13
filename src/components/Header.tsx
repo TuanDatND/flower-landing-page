@@ -25,7 +25,10 @@ export const Header: React.FC<HeaderProps> = ({ onQuoteClick }) => {
             <img
               alt="Logo Giống Hoa Dũng Tâm"
               className="relative h-7 sm:h-8 w-auto object-contain transition-transform group-hover:scale-105"
-              src="https://lh3.googleusercontent.com/aida/AEtjO1UGvt4sdwTPuA1--pjcYoxgesr_QlHUzgPZpXxCDghuGgUbBgzXyj1p9NYScA_DgQrfvIUTXYMmYZC3GYFcsl67B3lQlhvqplOZVGCj5zxRg_95IvKN56A5_Vb1tZ_yEu3Xm-QBxm58lNaKfgE90GXSLDXQBdh0HbY5NL2-XXsRK6PB1W3bXaBm5hwVVC_KAEMhT1PvgmMZf6KGeq6I1E4UDnlXJFw4yJORCBRO1N84pnLvWBsPNfFVF3u_"
+              src="/logo-dung-tam.png"
+              width="160"
+              height="32"
+              decoding="async"
             />
           </div>
           <div className="flex flex-col whitespace-nowrap min-w-0">

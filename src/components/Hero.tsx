@@ -134,6 +134,10 @@ export const Hero: React.FC<HeroProps> = ({ onExploreClick, onCallClick, onSelec
               className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               alt="Hệ thống nhà màng ươm giống cúc công nghệ cao Dũng Tâm"
               src="/flowers/nha-vuon-greenhouse.jpg"
+              fetchPriority="high"
+              decoding="async"
+              width="960"
+              height="600"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
             <div className="absolute bottom-2.5 sm:bottom-3 left-2.5 sm:left-3 right-2.5 sm:right-3 flex items-center justify-between text-white">
@@ -174,6 +178,10 @@ export const Hero: React.FC<HeroProps> = ({ onExploreClick, onCallClick, onSelec
                 className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 alt="Bộ rễ trắng mập ngọn cúc giống Dũng Tâm"
                 src="/flowers/giong-re-khoe.jpg"
+                loading="lazy"
+                decoding="async"
+                width="400"
+                height="300"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
               <div className="absolute bottom-2 sm:bottom-2.5 left-2 sm:left-2.5 right-2 sm:right-2.5">
@@ -201,6 +209,10 @@ export const Hero: React.FC<HeroProps> = ({ onExploreClick, onCallClick, onSelec
                 className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 alt="Chủ vườn Giống Cúc Dũng Tâm"
                 src="/flowers/chu-vuon-dung-tam.jpg"
+                loading="lazy"
+                decoding="async"
+                width="400"
+                height="300"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
               <div className="absolute bottom-2 sm:bottom-2.5 left-2 sm:left-2.5 right-2 sm:right-2.5">
@@ -237,7 +249,7 @@ export const Hero: React.FC<HeroProps> = ({ onExploreClick, onCallClick, onSelec
           {
             icon: <Headphones className="w-5 h-5" />,
             title: 'Kỹ Thuật Đi Kèm 24/7',
-            desc: 'Ba mẹ Dũng Tâm hỗ trợ',
+            desc: 'Nhà giống Dũng Tâm hỗ trợ',
           },
         ].map((badge, idx) => (
           <motion.div

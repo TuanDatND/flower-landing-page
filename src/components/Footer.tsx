@@ -11,8 +11,12 @@ export const Footer: React.FC = () => {
             <div className="flex items-center gap-2">
               <img
                 alt="Logo Giống Hoa Dũng Tâm"
-                className="h-7 w-auto object-contain"
-                src="https://lh3.googleusercontent.com/aida/AEtjO1UGvt4sdwTPuA1--pjcYoxgesr_QlHUzgPZpXxCDghuGgUbBgzXyj1p9NYScA_DgQrfvIUTXYMmYZC3GYFcsl67B3lQlhvqplOZVGCj5zxRg_95IvKN56A5_Vb1tZ_yEu3Xm-QBxm58lNaKfgE90GXSLDXQBdh0HbY5NL2-XXsRK6PB1W3bXaBm5hwVVC_KAEMhT1PvgmMZf6KGeq6I1E4UDnlXJFw4yJORCBRO1N84pnLvWBsPNfFVF3u_"
+                className="h-8 w-auto object-contain"
+                src="/logo-dung-tam.png"
+                width="160"
+                height="32"
+                loading="lazy"
+                decoding="async"
               />
               <span className="text-base text-black font-bold tracking-tight">
                 Giống Hoa Dũng Tâm
