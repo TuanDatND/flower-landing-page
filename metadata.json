@@ -1,0 +1,6 @@
+{
+  "name": "Giống Hoa Dũng Tâm",
+  "description": "Nhà vườn chuyên cung cấp cây giống hoa chất lượng cao F1: Cúc mâm xôi, Đồng tiền lùn, Dạ yến thảo, Cát tường, Thược dược sỉ & lẻ toàn quốc.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
