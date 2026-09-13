@@ -55,7 +55,7 @@ export const CatalogueSection: React.FC<CatalogueSectionProps> = ({
               Các Loại Giống Cúc Tuyển Chọn Tại Dũng Tâm
             </h2>
             <p className="text-[14px] text-zinc-600 mt-1.5 font-normal">
-              Chuyên cung cấp giống Cúc Vàng Hòe (9999), Pha Lê, Cánh Dài, Tứ Quý, Kali, Gơ Đỏ, Tua Vàng, Sao Đỏ... ngọn giâm &amp; cây giống khỏe F1.
+              Chuyên cung cấp giống Cúc Vàng Hòe (9999), Pha Lê, Lan Tím, Đóa (Cánh Dài), Nghệ Vàng, Kali, Gơ Đỏ, Tua Vàng, Sao Đỏ... ngọn giâm &amp; cây giống khỏe F1.
             </p>
           </div>
         </div>

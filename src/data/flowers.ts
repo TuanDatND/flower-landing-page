@@ -53,25 +53,25 @@ export const FLOWER_DATA: FlowerItem[] = [
   },
   {
     id: 'cd-03',
-    code: 'CD-03',
-    name: 'Cúc Cánh Dài Hồng Phấn',
+    code: 'LT-03',
+    name: 'Cúc Lan Tím',
     category: 'cuc-dai-doa',
-    badge: 'Cánh Bung Dài Thướt Tha',
+    badge: 'Sắc Tím Quý Phái',
     badgeType: 'outline',
-    photoTag: '[Ảnh: Cúc Cánh Dài]',
-    subTag: 'Form hoa quý phái',
-    description: 'Cánh hoa bung dài uyển chuyển, sắc hồng sen ngọt ngào kết hợp tâm vàng tươi tắn. Cành hoa dài thẳng tắp, đạt chuẩn cắt cành xuất khẩu.',
+    photoTag: '[Ảnh: Cúc Lan Tím]',
+    subTag: 'Cánh Bung Dài Thướt Tha',
+    description: 'Cánh hoa bung dài uyển chuyển, sắc tím hoa lan đằm thắm quý phái kết hợp tâm hoa tươi tắn. Cành hoa dài thẳng tắp, đạt chuẩn cắt cành và cắm bình nghệ thuật.',
     specLabel: 'Chiều dài cành',
     specValue: '75 - 90 cm',
     imageUrl: '/flowers/canh-dai-hong.jpg',
-    alt: 'Cúc cánh dài hồng phấn duyên dáng',
+    alt: 'Cúc Lan Tím cánh dài duyên dáng quý phái',
     details: {
       floweringTime: '85 - 90 ngày',
       origin: 'Chọn lọc ngọn giống thuần F1 tại vườn',
       features: [
         'Cánh dài cong nhẹ tự nhiên, bung nở xòe rộng ấn tượng',
-        'Cành cúc mập, chắc khỏe, ít lá chân hư hao',
-        'Thích hợp trồng chậu lớn hoặc cắt cành cắm bình'
+        'Sắc tím hoa lan sang trọng, giữ màu tươi bền lâu',
+        'Cành cúc mập, chắc khỏe, ít lá chân hư hao'
       ],
       careGuide: 'Tỉa nụ nách xung quanh để dồn dinh dưỡng nuôi bông chính to đẹp nhất.'
     }
@@ -104,17 +104,17 @@ export const FLOWER_DATA: FlowerItem[] = [
   {
     id: 'tq-04',
     code: 'TQ-04',
-    name: 'Cúc Tứ Quý Vàng Quanh Năm',
+    name: 'Cúc Nghệ Vàng',
     category: 'cuc-chum',
     badge: 'Hoa Bốn Mùa',
     badgeType: 'primary',
-    photoTag: '[Ảnh: Cúc Tứ Quý]',
+    photoTag: '[Ảnh: Cúc Nghệ Vàng]',
     subTag: 'Siêu Sai Bông',
-    description: 'Giống cúc bốn mùa khỏe bậc nhất, kháng chịu thời tiết nắng mưa, ra hoa liên tục quanh năm. Tán cây xòe tròn trĩu nụ, hoa nở rộ bền bỉ.',
+    description: 'Giống cúc nghệ vàng khỏe bậc nhất, kháng chịu thời tiết tốt, hoa nở rực rỡ sắc vàng nghệ đậm đà, tán xòe tròn trĩu nụ, hoa nở rộ bền bỉ.',
     specLabel: 'Mùa vụ',
     specValue: 'Trồng quanh năm',
     imageUrl: '/flowers/tu-quy-vang.jpg',
-    alt: 'Cúc tứ quý vàng rộ bông quanh năm',
+    alt: 'Cúc nghệ vàng nở rực rỡ, sai bông',
     details: {
       floweringTime: 'Cho hoa liên tục sau 60-70 ngày trồng',
       origin: 'Dòng giống thích nghi khí hậu toàn quốc',

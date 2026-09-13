@@ -81,7 +81,7 @@ export const Footer: React.FC = () => {
             </h3>
             <div className="flex flex-col gap-2">
               <span className="text-[13px] text-zinc-600">Cúc Vàng Hòe (9999) &amp; Pha Lê</span>
-              <span className="text-[13px] text-zinc-600">Cúc Cánh Dài &amp; Cúc Tứ Quý</span>
+              <span className="text-[13px] text-zinc-600">Cúc Lan Tím &amp; Cúc Nghệ Vàng</span>
               <span className="text-[13px] text-zinc-600">Cúc Kali &amp; Cúc Gơ Đỏ</span>
               <span className="text-[13px] text-zinc-600">Cúc Tua Vàng &amp; Cúc Sao Đỏ</span>
               <span className="text-[13px] text-zinc-600">Ngọn giống cúc F1 cắt cành sỉ</span>

@@ -259,8 +259,8 @@ ${data.quantity.trim() ? `• Số lượng dự kiến: ${data.quantity.trim()}
                       <option value="Cúc Vàng Hòe (9999)">Cúc Vàng Hòe (9999) - Đại đóa bán chạy</option>
                       <option value="Cúc Pha Lê">Cúc Pha Lê - Trắng tinh khôi</option>
                       <option value="Cúc Đóa (Cánh Dài)">Cúc Đóa (Cánh Dài) - Luống giống F1 mập khỏe</option>
-                      <option value="Cúc Cánh Dài">Cúc Cánh Dài - Dáng hoa bay bổng</option>
-                      <option value="Cúc Tứ Quý">Cúc Tứ Quý - Vàng cam quanh năm</option>
+                      <option value="Cúc Lan Tím">Cúc Lan Tím - Sắc tím hoa lan quý phái</option>
+                      <option value="Cúc Nghệ Vàng">Cúc Nghệ Vàng - Vàng đậm rực rỡ</option>
                       <option value="Cúc Kali">Cúc Kali - Hoa chùm tím hồng rực rỡ</option>
                       <option value="Cúc Gơ Đỏ">Cúc Gơ Đỏ - Sắc đỏ nhung quý phái</option>
                       <option value="Cúc Tua Vàng">Cúc Tua Vàng - Dáng tua tơ độc đáo</option>

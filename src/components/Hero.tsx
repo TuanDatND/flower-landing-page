@@ -59,7 +59,7 @@ export const Hero: React.FC<HeroProps> = ({ onExploreClick, onCallClick, onSelec
           Toàn Quốc
         </h1>
         <p className="text-base sm:text-lg text-zinc-600 max-w-2xl mx-auto leading-relaxed font-normal">
-          Chuyên cung cấp các loại giống cúc cắt cành &amp; chậu: <strong className="text-black font-semibold">Vàng Hòe (9999), Pha Lê, Cánh Dài, Tứ Quý, Kali, Gơ Đỏ, Tua Vàng, Sao Đỏ...</strong> Ngọn giâm &amp; cây giống rễ trắng mập mạp, tỉ lệ sống &gt; 99%, đồng hành kỹ thuật cùng nhà vườn Dũng Tâm.
+          Chuyên cung cấp các loại giống cúc cắt cành &amp; chậu: <strong className="text-black font-semibold">Vàng Hòe (9999), Pha Lê, Lan Tím, Đóa (Cánh Dài), Nghệ Vàng, Kali, Gơ Đỏ, Tua Vàng, Sao Đỏ...</strong> Ngọn giâm &amp; cây giống rễ trắng mập mạp, tỉ lệ sống &gt; 99%, đồng hành kỹ thuật cùng nhà vườn Dũng Tâm.
         </p>
       </motion.div>
 

@@ -17,25 +17,25 @@ export const Header: React.FC<HeaderProps> = ({ onQuoteClick }) => {
   ];
 
   return (
-    <header className="fixed top-4 left-0 w-full z-50 px-4 pointer-events-none" id="site-header">
-      <div className="pointer-events-auto max-w-7xl w-full mx-auto rounded-full bg-white/95 backdrop-blur-xl border border-zinc-200/90 shadow-[0_12px_40px_rgba(0,0,0,0.08)] px-4 sm:px-5 py-2.5 flex items-center justify-between gap-4 transition-all">
+    <header className="fixed top-2.5 sm:top-4 left-0 w-full z-50 px-2.5 sm:px-4 pointer-events-none" id="site-header">
+      <div className="pointer-events-auto max-w-7xl w-full mx-auto rounded-full bg-white/95 backdrop-blur-xl border border-zinc-200/90 shadow-[0_12px_40px_rgba(0,0,0,0.08)] px-3 sm:px-5 py-2 sm:py-2.5 flex items-center justify-between gap-2 sm:gap-4 transition-all">
         {/* Brand */}
-        <a href="#" className="flex items-center gap-3 flex-shrink-0 group" id="header-brand">
+        <a href="#" className="flex items-center gap-2 sm:gap-3 flex-shrink-0 group min-w-0" id="header-brand">
           <div className="relative flex items-center justify-center flex-shrink-0">
             <img
               alt="Logo Giống Hoa Dũng Tâm"
-              className="relative h-8 w-auto object-contain transition-transform group-hover:scale-105"
+              className="relative h-7 sm:h-8 w-auto object-contain transition-transform group-hover:scale-105"
               src="https://lh3.googleusercontent.com/aida/AEtjO1UGvt4sdwTPuA1--pjcYoxgesr_QlHUzgPZpXxCDghuGgUbBgzXyj1p9NYScA_DgQrfvIUTXYMmYZC3GYFcsl67B3lQlhvqplOZVGCj5zxRg_95IvKN56A5_Vb1tZ_yEu3Xm-QBxm58lNaKfgE90GXSLDXQBdh0HbY5NL2-XXsRK6PB1W3bXaBm5hwVVC_KAEMhT1PvgmMZf6KGeq6I1E4UDnlXJFw4yJORCBRO1N84pnLvWBsPNfFVF3u_"
             />
           </div>
-          <div className="flex flex-col whitespace-nowrap">
-            <span className="text-[14px] text-black font-bold tracking-tight leading-none flex items-center gap-1.5">
-              DŨNG TÂM{' '}
-              <span className="text-[9px] uppercase font-bold tracking-widest px-1.5 py-0.5 rounded-full bg-black text-white">
+          <div className="flex flex-col whitespace-nowrap min-w-0">
+            <span className="text-[13px] sm:text-[14px] text-black font-bold tracking-tight leading-none flex items-center gap-1.5">
+              DŨNG TÂM
+              <span className="hidden sm:inline-block text-[9px] uppercase font-bold tracking-widest px-1.5 py-0.5 rounded-full bg-black text-white">
                 PREMIUM FARM
               </span>
             </span>
-            <span className="text-[11px] text-zinc-500 font-medium tracking-tight">
+            <span className="text-[10px] sm:text-[11px] text-zinc-500 font-medium tracking-tight mt-0.5">
               Vườn Ươm Cây Giống F1
             </span>
           </div>
@@ -59,7 +59,7 @@ export const Header: React.FC<HeaderProps> = ({ onQuoteClick }) => {
         </nav>
 
         {/* Action Controls */}
-        <div className="flex items-center gap-2.5 flex-shrink-0 whitespace-nowrap">
+        <div className="flex items-center gap-1.5 sm:gap-2.5 flex-shrink-0 whitespace-nowrap">
           {/* Hotline Pill */}
           <a
             href="tel:0933634678"
@@ -80,22 +80,23 @@ export const Header: React.FC<HeaderProps> = ({ onQuoteClick }) => {
           <button
             type="button"
             onClick={onQuoteClick}
-            className="inline-flex items-center justify-center gap-1.5 px-4 py-2 bg-black text-white font-semibold text-[13px] rounded-full shadow-[0_4px_16px_rgba(0,0,0,0.15)] hover:bg-zinc-800 hover:scale-[1.02] active:scale-[0.98] transition-all whitespace-nowrap flex-shrink-0 cursor-pointer"
+            className="inline-flex items-center justify-center gap-1 sm:gap-1.5 px-3 sm:px-4 py-1.5 sm:py-2 bg-black text-white font-semibold text-[12px] sm:text-[13px] rounded-full shadow-[0_4px_16px_rgba(0,0,0,0.15)] hover:bg-zinc-800 active:scale-[0.98] transition-all whitespace-nowrap flex-shrink-0 cursor-pointer"
             id="header-quote-btn"
           >
             <Sparkles className="w-3.5 h-3.5 text-zinc-300" />
-            <span>Báo giá sỉ</span>
+            <span className="hidden sm:inline">Báo giá sỉ</span>
+            <span className="sm:hidden">Báo giá</span>
           </button>
 
           {/* Mobile Hamburger Toggle */}
           <button
             type="button"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="xl:hidden p-1.5 rounded-full bg-zinc-100 hover:bg-zinc-200 border border-zinc-200 text-black transition-colors"
+            className="xl:hidden p-1.5 sm:p-2 rounded-full bg-zinc-100 hover:bg-zinc-200 border border-zinc-200 text-black transition-colors flex items-center justify-center cursor-pointer"
             aria-label="Toggle menu"
             id="mobile-menu-toggle"
           >
-            {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+            {mobileMenuOpen ? <X className="w-4 h-4 sm:w-5 sm:h-5" /> : <Menu className="w-4 h-4 sm:w-5 sm:h-5" />}
           </button>
         </div>
       </div>
