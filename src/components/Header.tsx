@@ -63,7 +63,7 @@ export const Header: React.FC<HeaderProps> = ({ onQuoteClick }) => {
           {/* Hotline Pill */}
           <a
             href="tel:0933634678"
-            className="hidden sm:flex items-center gap-2 px-3 py-1 bg-zinc-100 hover:bg-zinc-200/80 border border-zinc-200 rounded-full flex-shrink-0 transition-colors"
+            className="hidden md:flex items-center gap-2 px-3 py-1 bg-zinc-100 hover:bg-zinc-200/80 border border-zinc-200 rounded-full flex-shrink-0 transition-colors"
             title="Gọi ngay cho nhà vườn"
             id="header-phone-badge"
           >

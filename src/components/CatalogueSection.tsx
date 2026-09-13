@@ -17,7 +17,7 @@ export const CatalogueSection: React.FC<CatalogueSectionProps> = ({
   const [searchTerm, setSearchTerm] = useState('');
 
   const filterTabs: { id: FlowerCategory; label: string }[] = [
-    { id: 'all', label: 'Tất cả giống cúc' },
+    { id: 'all', label: 'Tất cả' },
     { id: 'cuc-dai-doa', label: 'Cúc Đại Đóa' },
     { id: 'canh-dai', label: 'Đóa (Cánh Dài)' },
     { id: 'cuc-chum', label: 'Cúc Chùm & Cành' },
@@ -61,26 +61,24 @@ export const CatalogueSection: React.FC<CatalogueSectionProps> = ({
         </div>
 
         {/* Filter Tabs */}
-        <div className="flex items-center gap-2 overflow-x-auto pb-1 max-w-full scrollbar-none" id="filterTabs">
-          <div className="inline-flex p-1 bg-white border border-zinc-200 rounded-full shadow-sm">
-            {filterTabs.map((tab) => {
-              const isActive = activeTab === tab.id;
-              return (
-                <button
-                  key={tab.id}
-                  type="button"
-                  onClick={() => setActiveTab(tab.id)}
-                  className={`filter-tab px-4 py-2 rounded-full text-[13px] transition-all whitespace-nowrap cursor-pointer ${
-                    isActive
-                      ? 'bg-black text-white shadow-sm font-semibold'
-                      : 'text-zinc-600 hover:text-black hover:bg-zinc-100 font-medium'
-                  }`}
-                >
-                  {tab.label}
-                </button>
-              );
-            })}
-          </div>
+        <div className="flex items-center gap-2 overflow-x-auto py-1.5 max-w-full scrollbar-none -mx-4 px-4 sm:mx-0 sm:px-0" id="filterTabs">
+          {filterTabs.map((tab) => {
+            const isActive = activeTab === tab.id;
+            return (
+              <button
+                key={tab.id}
+                type="button"
+                onClick={() => setActiveTab(tab.id)}
+                className={`filter-tab px-3.5 sm:px-4 py-2 rounded-full text-[12px] sm:text-[13px] transition-all whitespace-nowrap flex-shrink-0 cursor-pointer border ${
+                  isActive
+                    ? 'bg-black text-white border-black shadow-sm font-semibold'
+                    : 'bg-white text-zinc-700 hover:text-black hover:bg-zinc-100 border-zinc-200 font-medium'
+                }`}
+              >
+                {tab.label}
+              </button>
+            );
+          })}
         </div>
       </motion.div>
 

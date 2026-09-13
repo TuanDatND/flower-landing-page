@@ -29,7 +29,7 @@ export const FLOWER_DATA: FlowerItem[] = [
   {
     id: 'pl-02',
     code: 'PL-02',
-    name: 'Cúc Pha Lê Trắng Tinh Khiết',
+    name: 'Cúc Pha Lê',
     category: 'cuc-dai-doa',
     badge: 'Bán chạy vụ Tết',
     badgeType: 'primary',
