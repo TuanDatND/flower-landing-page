@@ -29,9 +29,9 @@ export const Footer: React.FC = () => {
 
             <div className="flex items-center gap-2 pt-1">
               <a
-                href="https://gionghoa.store"
+                href="https://www.gionghoa.store"
                 className="w-8 h-8 rounded-full bg-zinc-100 border border-zinc-300 flex items-center justify-center text-zinc-700 hover:text-black hover:bg-zinc-200 transition-colors"
-                title="Website chính thức gionghoa.store"
+                title="Website chính thức www.gionghoa.store"
               >
                 <Globe className="w-4 h-4" />
               </a>

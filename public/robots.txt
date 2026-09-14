@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://gionghoa.store/sitemap.xml
+Sitemap: https://www.gionghoa.store/sitemap.xml

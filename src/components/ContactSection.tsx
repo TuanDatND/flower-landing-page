@@ -49,7 +49,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ prefilledFlower 
 • Khách hàng: ${data.fullName.trim() || 'Khách đặt giống hoa'}
 • Số điện thoại: ${data.phone.trim()}
 • Giống quan tâm: ${data.flowerType}
-${data.quantity.trim() ? `• Số lượng dự kiến: ${data.quantity.trim()}\n` : ''}${data.message.trim() ? `• Tỉnh thành & Ghi chú: ${data.message.trim()}\n` : ''}— Gửi từ website: gionghoa.store`;
+${data.quantity.trim() ? `• Số lượng dự kiến: ${data.quantity.trim()}\n` : ''}${data.message.trim() ? `• Tỉnh thành & Ghi chú: ${data.message.trim()}\n` : ''}— Gửi từ website: www.gionghoa.store`;
   };
 
   const handleSubmit = (e: React.FormEvent) => {

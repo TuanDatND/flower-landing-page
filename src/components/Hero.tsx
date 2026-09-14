@@ -109,7 +109,7 @@ export const Hero: React.FC<HeroProps> = ({ onExploreClick, onCallClick, onSelec
           <div className="flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-3 py-1 bg-zinc-50 border border-zinc-200 rounded-full min-w-0 max-w-[75%] sm:max-w-none">
             <CheckCircle2 className="w-3.5 h-3.5 text-black flex-shrink-0" />
             <span className="font-mono text-[11px] sm:text-[12px] text-zinc-800 font-semibold truncate">
-              gionghoa.store • Hệ Thống Luống Ươm Thực Tế
+              www.gionghoa.store • Hệ Thống Luống Ươm Thực Tế
             </span>
           </div>
           <div className="flex items-center gap-1 text-zinc-400 flex-shrink-0">

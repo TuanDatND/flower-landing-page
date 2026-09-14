@@ -15,6 +15,7 @@ export const FLOWER_DATA: FlowerItem[] = [
     specValue: 'Ngọn giâm / Bầu rễ khỏe',
     imageUrl: '/flowers/vang-hoe-9999.jpg',
     alt: 'Giống Cúc Vàng Hòe 9999 bông to cánh dày',
+    seoPath: '/giong-cuc-vang-hoe-9999/',
     details: {
       floweringTime: '85 - 95 ngày (chuẩn dịp Tết và cúng lễ rằm)',
       origin: 'Vườn ươm công nghệ cao Giống Cúc Dũng Tâm',
@@ -40,6 +41,7 @@ export const FLOWER_DATA: FlowerItem[] = [
     specValue: '25 - 35 ngày',
     imageUrl: '/flowers/pha-le.jpg',
     alt: 'Cây giống cúc Pha Lê trắng tinh khôi',
+    seoPath: '/giong-cuc-pha-le/',
     details: {
       floweringTime: '80 - 90 ngày sau trồng',
       origin: 'Giống F1 tuyển chọn từ nhà vườn Dũng Tâm',
@@ -90,6 +92,7 @@ export const FLOWER_DATA: FlowerItem[] = [
     specValue: 'Ngọn giâm / Bầu rễ',
     imageUrl: '/flowers/doa-canh-dai.jpg',
     alt: 'Giống cúc đóa cánh dài nhà vườn Dũng Tâm',
+    seoPath: '/giong-cuc-doa-canh-dai/',
     details: {
       floweringTime: '80 - 90 ngày sau trồng',
       origin: 'Vườn ươm công nghệ cao Giống Cúc Dũng Tâm',
@@ -315,6 +318,7 @@ export const FLOWER_DATA: FlowerItem[] = [
     specValue: 'Kiện 1.000 - 5.000 ngọn',
     imageUrl: '/flowers/giong-re-khoe.jpg',
     alt: 'Ngọn giống cúc cắt cành rễ trắng khỏe',
+    seoPath: '/ngon-giong-cuc-cat-canh-f1/',
     details: {
       floweringTime: 'Sẵn sàng trồng ngay sau khi nhận hàng',
       origin: 'Vườn ươm công nghệ cao Giống Cúc Dũng Tâm',

@@ -139,6 +139,15 @@ export const CatalogueSection: React.FC<CatalogueSectionProps> = ({
                   {flower.description}
                 </p>
 
+                {flower.seoPath && (
+                  <a
+                    href={flower.seoPath}
+                    className="text-[12px] text-zinc-700 underline underline-offset-2 hover:text-black font-semibold mb-2"
+                  >
+                    Xem thông tin chi tiết giống {flower.name}
+                  </a>
+                )}
+
                 {/* Bottom Bar: Price/Spec + Quote Action - Perfectly Aligned */}
                 <div className="mt-auto pt-3 border-t border-zinc-100 flex items-center justify-between gap-2">
                   <div className="flex flex-col min-w-0 pr-1">

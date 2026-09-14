@@ -10,6 +10,7 @@ export const Header: React.FC<HeaderProps> = ({ onQuoteClick }) => {
 
   const navLinks = [
     { name: 'Trang chủ', href: '#' },
+    { name: 'Hướng dẫn chọn giống cúc', href: '/giong-hoa-cuc/' },
     { name: 'Danh mục giống hoa', href: '#danh-muc-hoa' },
     { name: 'Ưu điểm nhà vườn', href: '#uu-diem' },
     { name: 'Quy trình đặt giống', href: '#quy-trinh' },

@@ -14,6 +14,7 @@ export interface FlowerItem {
   specValue: string;
   imageUrl: string;
   alt: string;
+  seoPath?: string;
   details?: {
     floweringTime: string;
     origin: string;
