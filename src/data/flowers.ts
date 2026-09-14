@@ -67,6 +67,7 @@ export const FLOWER_DATA: FlowerItem[] = [
     specValue: '75 - 90 cm',
     imageUrl: '/flowers/canh-dai-hong.jpg',
     alt: 'Cúc Lan Tím cánh dài duyên dáng quý phái',
+    seoPath: '/giong-cuc-lan-tim/',
     details: {
       floweringTime: '85 - 90 ngày',
       origin: 'Chọn lọc ngọn giống thuần F1 tại vườn',
@@ -118,6 +119,7 @@ export const FLOWER_DATA: FlowerItem[] = [
     specValue: 'Trồng quanh năm',
     imageUrl: '/flowers/tu-quy-vang.jpg',
     alt: 'Cúc nghệ vàng nở rực rỡ, sai bông',
+    seoPath: '/giong-cuc-nghe-vang/',
     details: {
       floweringTime: 'Cho hoa liên tục sau 60-70 ngày trồng',
       origin: 'Dòng giống thích nghi khí hậu toàn quốc',
@@ -143,6 +145,7 @@ export const FLOWER_DATA: FlowerItem[] = [
     specValue: '15 - 25 bông/cành',
     imageUrl: '/flowers/kali-chum.jpg',
     alt: 'Cúc Kali đa sắc rực rỡ',
+    seoPath: '/giong-cuc-kali/',
     details: {
       floweringTime: '70 - 75 ngày',
       origin: 'Vườn ươm Dũng Tâm giống chuẩn F1',
@@ -168,6 +171,7 @@ export const FLOWER_DATA: FlowerItem[] = [
     specValue: 'Màu đỏ thắm giữ bền',
     imageUrl: '/flowers/go-do.jpg',
     alt: 'Cúc Gơ Đỏ nhung quý phái',
+    seoPath: '/giong-cuc-go-do/',
     details: {
       floweringTime: '75 - 85 ngày',
       origin: 'Nhà vườn Dũng Tâm',
@@ -193,6 +197,7 @@ export const FLOWER_DATA: FlowerItem[] = [
     specValue: '> 99%',
     imageUrl: '/flowers/tua-vang.jpg',
     alt: 'Cúc Tua Vàng cánh nhọn óng ả',
+    seoPath: '/giong-cuc-tua-vang/',
     details: {
       floweringTime: '80 - 90 ngày',
       origin: 'Ngọn giống cúc F1 thuần khí hậu',
@@ -218,6 +223,7 @@ export const FLOWER_DATA: FlowerItem[] = [
     specValue: 'Chùm nhiều nụ',
     imageUrl: '/flowers/sao-do.jpg',
     alt: 'Cúc Sao Đỏ viền vàng',
+    seoPath: '/giong-cuc-sao-do/',
     details: {
       floweringTime: '70 - 80 ngày',
       origin: 'Giống cúc cành truyền thống nhà vườn Dũng Tâm',
@@ -243,6 +249,7 @@ export const FLOWER_DATA: FlowerItem[] = [
     specValue: '15 - 18 cm',
     imageUrl: '/flowers/kim-cuong.jpg',
     alt: 'Cúc Kim Cương đại đóa vàng rực',
+    seoPath: '/giong-cuc-kim-cuong/',
     details: {
       floweringTime: '90 - 100 ngày',
       origin: 'Phôi giống F1 nhà vườn Dũng Tâm',
@@ -268,6 +275,7 @@ export const FLOWER_DATA: FlowerItem[] = [
     specValue: 'Cắt cành liên tục',
     imageUrl: '/flowers/mai-cam.jpg',
     alt: 'Cúc Mai Cam rực rỡ ấm áp',
+    seoPath: '/giong-cuc-mai-cam/',
     details: {
       floweringTime: '65 - 75 ngày',
       origin: 'Chọn lọc ngọn giống khỏe tại vườn',
@@ -293,6 +301,7 @@ export const FLOWER_DATA: FlowerItem[] = [
     specValue: 'Tím hoa lan độc đáo',
     imageUrl: '/flowers/lan-tim.jpg',
     alt: 'Cúc Lan Tím cánh kép quý phái',
+    seoPath: '/giong-cuc-lan-tim/',
     details: {
       floweringTime: '75 - 80 ngày',
       origin: 'Giống cúc chùm lai mới Dũng Tâm',
