@@ -46,7 +46,7 @@ export const Header: React.FC<HeaderProps> = ({ onQuoteClick }) => {
         </a>
 
         {/* Desktop Navigation */}
-        <nav className="hidden xl:flex items-center gap-1 p-1 bg-zinc-100/90 rounded-full border border-zinc-200 flex-shrink-0" id="desktop-nav">
+        <nav className="hidden 2xl:flex items-center gap-1 p-1 bg-zinc-100/90 rounded-full border border-zinc-200 flex-shrink-0" id="desktop-nav">
           {navLinks.map((link, idx) => (
             <a
               key={link.name}
@@ -96,7 +96,7 @@ export const Header: React.FC<HeaderProps> = ({ onQuoteClick }) => {
           <button
             type="button"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="xl:hidden p-1.5 sm:p-2 rounded-full bg-zinc-100 hover:bg-zinc-200 border border-zinc-200 text-black transition-colors flex items-center justify-center cursor-pointer"
+            className="2xl:hidden p-1.5 sm:p-2 rounded-full bg-zinc-100 hover:bg-zinc-200 border border-zinc-200 text-black transition-colors flex items-center justify-center cursor-pointer"
             aria-label="Toggle menu"
             id="mobile-menu-toggle"
           >
@@ -107,7 +107,7 @@ export const Header: React.FC<HeaderProps> = ({ onQuoteClick }) => {
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="pointer-events-auto xl:hidden max-w-sm mx-auto mt-2 bg-white/98 backdrop-blur-xl border border-zinc-200 rounded-2xl p-4 shadow-2xl flex flex-col gap-2">
+        <div className="pointer-events-auto 2xl:hidden max-w-sm mx-auto mt-2 bg-white/98 backdrop-blur-xl border border-zinc-200 rounded-2xl p-4 shadow-2xl flex flex-col gap-2">
           {navLinks.map((link) => (
             <a
               key={link.name}
