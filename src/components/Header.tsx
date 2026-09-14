@@ -9,17 +9,17 @@ export const Header: React.FC<HeaderProps> = ({ onQuoteClick }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navLinks = [
-    { name: 'Trang chủ', href: '#' },
-    { name: 'Hướng dẫn chọn giống cúc', href: '/giong-hoa-cuc/' },
-    { name: 'Danh mục giống hoa', href: '#danh-muc-hoa' },
-    { name: 'Ưu điểm nhà vườn', href: '#uu-diem' },
-    { name: 'Quy trình đặt giống', href: '#quy-trinh' },
-    { name: 'Liên hệ & Tư vấn', href: '#lien-he' },
+    { name: 'Trang chủ', shortName: 'Trang chủ', href: '#' },
+    { name: 'Hướng dẫn chọn giống', shortName: 'Chọn giống', href: '/giong-hoa-cuc/' },
+    { name: 'Danh mục giống hoa', shortName: 'Danh mục hoa', href: '#danh-muc-hoa' },
+    { name: 'Ưu điểm nhà vườn', shortName: 'Ưu điểm', href: '#uu-diem' },
+    { name: 'Quy trình đặt giống', shortName: 'Quy trình', href: '#quy-trinh' },
+    { name: 'Liên hệ & Tư vấn', shortName: 'Liên hệ', href: '#lien-he' },
   ];
 
   return (
     <header className="fixed top-2.5 sm:top-4 left-0 w-full z-50 px-2.5 sm:px-4 pointer-events-none" id="site-header">
-      <div className="pointer-events-auto max-w-7xl w-full mx-auto rounded-full bg-white/95 backdrop-blur-xl border border-zinc-200/90 shadow-[0_12px_40px_rgba(0,0,0,0.08)] px-3 sm:px-5 py-2 sm:py-2.5 flex items-center justify-between gap-2 sm:gap-4 transition-all">
+      <div className="pointer-events-auto max-w-7xl 2xl:max-w-[1440px] w-full mx-auto rounded-full bg-white/95 backdrop-blur-xl border border-zinc-200/90 shadow-[0_12px_40px_rgba(0,0,0,0.08)] px-3 sm:px-4 lg:px-5 py-2 sm:py-2.5 flex items-center justify-between gap-2 lg:gap-3 transition-all">
         {/* Brand */}
         <a href="#" className="flex items-center gap-2 sm:gap-3 flex-shrink-0 group min-w-0" id="header-brand">
           <div className="relative flex items-center justify-center flex-shrink-0">
@@ -46,18 +46,20 @@ export const Header: React.FC<HeaderProps> = ({ onQuoteClick }) => {
         </a>
 
         {/* Desktop Navigation */}
-        <nav className="hidden 2xl:flex items-center gap-1 p-1 bg-zinc-100/90 rounded-full border border-zinc-200 flex-shrink-0" id="desktop-nav">
+        <nav className="hidden xl:flex items-center gap-0.5 2xl:gap-1 p-1 bg-zinc-100/90 rounded-full border border-zinc-200 flex-shrink-0" id="desktop-nav">
           {navLinks.map((link, idx) => (
             <a
               key={link.name}
               href={link.href}
-              className={`text-[13px] px-3.5 py-1 rounded-full whitespace-nowrap transition-all ${
+              title={link.name}
+              className={`text-[12.5px] 2xl:text-[13px] px-2.5 2xl:px-3.5 py-1 rounded-full whitespace-nowrap transition-all ${
                 idx === 0
                   ? 'text-white bg-black font-semibold shadow-sm'
                   : 'text-zinc-600 hover:text-black hover:bg-zinc-200/60 font-medium'
               }`}
             >
-              {link.name}
+              <span className="hidden 2xl:inline">{link.name}</span>
+              <span className="2xl:hidden">{link.shortName}</span>
             </a>
           ))}
         </nav>
@@ -96,7 +98,7 @@ export const Header: React.FC<HeaderProps> = ({ onQuoteClick }) => {
           <button
             type="button"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="2xl:hidden p-1.5 sm:p-2 rounded-full bg-zinc-100 hover:bg-zinc-200 border border-zinc-200 text-black transition-colors flex items-center justify-center cursor-pointer"
+            className="xl:hidden p-1.5 sm:p-2 rounded-full bg-zinc-100 hover:bg-zinc-200 border border-zinc-200 text-black transition-colors flex items-center justify-center cursor-pointer"
             aria-label="Toggle menu"
             id="mobile-menu-toggle"
           >
@@ -107,7 +109,7 @@ export const Header: React.FC<HeaderProps> = ({ onQuoteClick }) => {
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="pointer-events-auto 2xl:hidden max-w-sm mx-auto mt-2 bg-white/98 backdrop-blur-xl border border-zinc-200 rounded-2xl p-4 shadow-2xl flex flex-col gap-2">
+        <div className="pointer-events-auto xl:hidden max-w-sm mx-auto mt-2 bg-white/98 backdrop-blur-xl border border-zinc-200 rounded-2xl p-4 shadow-2xl flex flex-col gap-2">
           {navLinks.map((link) => (
             <a
               key={link.name}
