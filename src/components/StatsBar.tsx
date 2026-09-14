@@ -1,6 +1,5 @@
 import React from 'react';
 import { Flower2, Trees, Smile, MapPin } from 'lucide-react';
-import { motion } from 'motion/react';
 
 export const StatsBar: React.FC = () => {
   const stats = [

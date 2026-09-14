@@ -11,7 +11,6 @@ import {
   CheckCircle2,
   Image as ImageIcon
 } from 'lucide-react';
-import { motion } from 'motion/react';
 
 interface HeroProps {
   onExploreClick: () => void;
@@ -23,10 +22,7 @@ export const Hero: React.FC<HeroProps> = ({ onExploreClick, onCallClick, onSelec
   return (
     <section className="max-w-7xl mx-auto px-4 lg:px-8 pt-4 pb-16 lg:pb-24 relative" id="hero-section">
       {/* Announcement Pill */}
-      <motion.div
-        initial={{ opacity: 0, y: -16 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, ease: 'easeOut' }}
+      <div
         className="flex justify-center mb-6"
       >
         <a
@@ -42,13 +38,10 @@ export const Hero: React.FC<HeroProps> = ({ onExploreClick, onCallClick, onSelec
           <span className="text-[12px] text-zinc-500 font-medium">Cung cấp sỉ &amp; lẻ toàn quốc</span>
           <ArrowRight className="w-3.5 h-3.5 text-zinc-800 group-hover:translate-x-0.5 transition-transform" />
         </a>
-      </motion.div>
+      </div>
 
       {/* Main Headline */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, delay: 0.1, ease: 'easeOut' }}
+      <div
         className="text-center max-w-4xl mx-auto mb-8"
       >
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-black tracking-tight font-bold mb-5 leading-tight">
@@ -61,13 +54,10 @@ export const Hero: React.FC<HeroProps> = ({ onExploreClick, onCallClick, onSelec
         <p className="text-base sm:text-lg text-zinc-600 max-w-2xl mx-auto leading-relaxed font-normal">
           Chuyên cung cấp các loại giống cúc cắt cành &amp; chậu: <strong className="text-black font-semibold">Vàng Hòe (9999), Pha Lê, Lan Tím, Đóa (Cánh Dài), Nghệ Vàng, Kali, Gơ Đỏ, Tua Vàng, Sao Đỏ...</strong> Ngọn giâm &amp; cây giống rễ trắng mập mạp, tỉ lệ sống &gt; 99%, đồng hành kỹ thuật cùng nhà vườn Dũng Tâm.
         </p>
-      </motion.div>
+      </div>
 
       {/* CTA Buttons */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.2, ease: 'easeOut' }}
+      <div
         className="flex flex-wrap items-center justify-center gap-3 mb-14"
         id="hero-cta-group"
       >
@@ -90,13 +80,10 @@ export const Hero: React.FC<HeroProps> = ({ onExploreClick, onCallClick, onSelec
           <span>Xem Bảng Giá &amp; Cây Giống</span>
           <ArrowDown className="w-3.5 h-3.5 text-zinc-500" />
         </button>
-      </motion.div>
+      </div>
 
       {/* Greenhouse Showcase Display */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, ease: 'easeOut' }}
+      <div
         className="relative max-w-5xl mx-auto bg-white border border-zinc-200 rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.06)] p-2.5 sm:p-4 overflow-hidden [transform:translateZ(0)]"
       >
         {/* Window Bar */}
@@ -224,7 +211,7 @@ export const Hero: React.FC<HeroProps> = ({ onExploreClick, onCallClick, onSelec
             </div>
           </div>
         </div>
-      </motion.div>
+      </div>
 
       {/* 4 Feature Badges */}
       <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-3 max-w-4xl mx-auto" id="hero-trust-badges">

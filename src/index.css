@@ -5,10 +5,6 @@ html {
   -webkit-tap-highlight-color: transparent;
 }
 
-img {
-  content-visibility: auto;
-}
-
 @layer utilities {
   .scrollbar-none::-webkit-scrollbar {
     display: none;

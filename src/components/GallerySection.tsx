@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Camera, Image as ImageIcon, X, ZoomIn } from 'lucide-react';
-import { motion } from 'motion/react';
 import { GALLERY_ITEMS } from '../data/flowers';
 import { GalleryItem } from '../types';
 
@@ -43,6 +42,7 @@ export const GallerySection: React.FC = () => {
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 alt={item.alt}
                 src={item.imageUrl}
+                loading="lazy"
                 decoding="async"
                 width="600"
                 height="400"

@@ -1,6 +1,5 @@
 import React from 'react';
 import { Star, Dna, Handshake, BadgePercent, PackageCheck, PhoneCall } from 'lucide-react';
-import { motion } from 'motion/react';
 
 export const WhyChooseUs: React.FC = () => {
   return (

@@ -92,6 +92,7 @@ export const CatalogueSection: React.FC<CatalogueSectionProps> = ({
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   alt={flower.alt}
                   src={flower.imageUrl}
+                  loading="lazy"
                   decoding="async"
                   width="400"
                   height="300"

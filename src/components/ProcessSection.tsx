@@ -1,6 +1,5 @@
 import React from 'react';
 import { ListOrdered, MessageSquare, Video, Box, CheckCircle } from 'lucide-react';
-import { motion } from 'motion/react';
 
 export const ProcessSection: React.FC = () => {
   const steps = [

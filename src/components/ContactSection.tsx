@@ -14,7 +14,6 @@ import {
   RotateCcw,
   MessageCircle
 } from 'lucide-react';
-import { motion } from 'motion/react';
 import { QuoteFormData } from '../types';
 
 interface ContactSectionProps {
