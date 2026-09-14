@@ -107,7 +107,7 @@ export const Footer: React.FC = () => {
               >
                 <MapPin className="w-4 h-4 text-black mt-0.5 flex-shrink-0 group-hover:scale-110 transition-transform" />
                 <span className="text-[13px] leading-relaxed font-normal">
-                  Cơ sở nhà vườn: <strong className="font-semibold text-black">Giống Cúc Dũng Tâm</strong> (Google Maps &rarr;)
+                  <strong className="font-semibold text-black">Giống Cúc Dũng Tâm</strong> · 16 Trần Thái Tông, Xuân Hương - Đà Lạt, Lâm Đồng (Google Maps &rarr;)
                 </span>
               </a>
               <div className="flex items-center gap-2">

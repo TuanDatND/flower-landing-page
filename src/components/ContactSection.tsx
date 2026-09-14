@@ -163,7 +163,7 @@ ${data.quantity.trim() ? `• Số lượng dự kiến: ${data.quantity.trim()}
                       <ExternalLink className="w-3.5 h-3.5 text-zinc-400 group-hover:text-black transition-colors" />
                     </span>
                     <span className="text-[12px] text-zinc-600 block mt-0.5">
-                      Bấm xem chỉ đường trực tiếp trên Google Maps
+                      16 Trần Thái Tông, Xuân Hương - Đà Lạt, Lâm Đồng
                     </span>
                   </div>
                 </a>
